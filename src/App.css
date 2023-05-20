@@ -1,4 +1,11 @@
-
+/* *{
+    margin: 7px;
+    padding: 5px;
+} */
+.img{
+    margin-top: 5%;
+    margin-left: 30%;
+}
 .ind{
     display: grid;
     margin:10px;
