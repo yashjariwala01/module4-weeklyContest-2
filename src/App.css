@@ -8,16 +8,17 @@
 }
 .ind{
     display: grid;
-    margin:10px;
-    grid-template-columns: repeat(5,1fr);
-    grid-gap: 10px;
+    margin: 26px;
+    grid-template-columns: repeat(5, 1fr );
+    grid-column-gap: 26px;
     border-bottom: 2px solid black;
     width: 100%;
     height: 5rem;
-    align-items: center;;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: flex-start;
 }
 .ind img{
-    width: 2rem;
-    height: 2rem;
+    width: 4rem;
+    height: 4rem;
+    margin-left: 20px;
 }
