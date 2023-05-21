@@ -1,7 +1,6 @@
 import axios from 'axios';
 import './App.css';
 import { useEffect, useState } from 'react';
-import images from "./Assets/images.png"
 
 
 function App() {
@@ -25,12 +24,6 @@ function App() {
 
   return (
     <div className="App">
-      {Error ? <div className='img' >
-                 <img src={images}/>
-                 <h1>it's just API problem</h1>
-                 </div> : loading ? ("loading" ):(
-        <>
-      <div className='App'>
         {userData.map(data=>(
           <UserCard 
           key={data.id}
@@ -41,12 +34,8 @@ function App() {
           volumn={data.total_volume}
           />
         ))}
-     </div>
-      </>
-  )}
   </div>
-  )
-}
+  )}
 
 const UserCard=({name,symbol,img,currentPrice,volumn})=> ( 
 <td className='ind'>
